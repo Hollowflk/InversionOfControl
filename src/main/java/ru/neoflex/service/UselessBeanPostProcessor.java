@@ -3,6 +3,7 @@ package ru.neoflex.service;
 import lombok.extern.java.Log;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
 /**
  * UselessBeanPostProcessor.
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
  * @author nanikeev
  */
 @Log
+@Component
 public class UselessBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

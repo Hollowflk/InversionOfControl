@@ -11,7 +11,7 @@ import ru.neoflex.repository.OrderRepository;
  * @author nanikeev
  */
 @Log
-//@Component
+@Component
 class OrderRepositoryImpl implements OrderRepository {
 
     @Override

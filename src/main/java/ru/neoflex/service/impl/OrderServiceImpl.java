@@ -20,14 +20,14 @@ import java.time.LocalDateTime;
  */
 @Log
 @RequiredArgsConstructor
-//@Component
+@Component
 public class OrderServiceImpl implements OrderService {
 
-//    @Autowired
+    @Autowired
     private final OrderRepository orderRepository;
 
     @Setter
-//    @Value("${default.price}")
+    @Value("${default.price}")
     private Double standardSum;
 
     @Override
